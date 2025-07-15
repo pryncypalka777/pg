@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>777</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" type="image/png" href="obrazy/favicon.png">
+    </head>
+    <body>
+        <div id="loader">
+            <div class="loader-bg-image"></div>
+            <div class="spinner"></div>
+        </div>
+
+
+        
+        <section class="header">
+            <video autoplay loop muted plays-inline class="back-video" id="bgVideo">
+                <source src="obrazy/banner.mp4" type="video/mp4">
+            </video>
+            
+            <div class="text-box">
+                <h1>pryncypalka</h1>
+                <a href="https://github.com/pryncypalka777" class="hero-btn">github</a>
+				<a href="https://guns.lol/pryncypalka" class="hero-btn">guns.lol</a>
+				<a href="https://t.me/prncplk" class="hero-btn">telegram</a>
+            </div>
+
+
+
+
+
+        </section>
+        
+        
+        
+        <script>
+            window.addEventListener("load", function () {
+                const loader = document.getElementById("loader");
+                loader.style.opacity = "0";
+                setTimeout(() => {
+                loader.style.display = "none";
+                }, 1000); // Czas musi pasować do transition (1s = 1000ms)
+              });
+        </script>
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            const video = document.getElementById("bgVideo");
+            video.playbackRate = 1; // ← tutaj zmieniasz prędkość (np. 0.5 dla wolniej)
+        </script>
+
+
+    </body>
+</html>
